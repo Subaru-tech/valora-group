@@ -95,7 +95,7 @@ export default function GlobalNetworkBg() {
       particles.push(new Particle(width, height));
     }
 
-    let mouse = { x: -1000, y: -1000 };
+    const mouse = { x: -1000, y: -1000 };
     const handleMouseMove = (e: MouseEvent) => { mouse.x = e.clientX; mouse.y = e.clientY; };
     const handleMouseLeave = () => { mouse.x = -1000; mouse.y = -1000; };
 

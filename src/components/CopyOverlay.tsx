@@ -1,9 +1,9 @@
 "use client";
 
-import { motion, useTransform } from "framer-motion";
+import { motion, useTransform, MotionValue } from "framer-motion";
 
 interface CopyOverlayProps {
-  progress: any;
+  progress: MotionValue<number>;
 }
 
 export default function CopyOverlay({ progress }: CopyOverlayProps) {

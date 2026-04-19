@@ -9,6 +9,7 @@ export function useAudio() {
     // Only init inside browser
     if (typeof window === "undefined") return;
     if (!audioCtxRef.current) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       audioCtxRef.current = new (window.AudioContext || (window as any).webkitAudioContext)();
     }
     if (audioCtxRef.current.state === "suspended") {

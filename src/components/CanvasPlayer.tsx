@@ -1,10 +1,10 @@
 "use client";
 
 import { useRef, useEffect } from "react";
-import { useScroll, useTransform, motion } from "framer-motion";
+import { MotionValue } from "framer-motion";
 
 interface CanvasPlayerProps {
-  progress: any; // MotionValue<number>
+  progress: MotionValue<number>;
 }
 
 export default function CanvasPlayer({ progress }: CanvasPlayerProps) {
